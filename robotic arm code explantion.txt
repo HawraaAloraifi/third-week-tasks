@@ -1,0 +1,7 @@
+Welcome everyone.
+The code in both task work in similar way:
+-	Initialize variable 
+-	Set a value for some of them 
+-	Set the servo information, like the input.
+-	Write the equation and store its value
+-	Send the value to the servo

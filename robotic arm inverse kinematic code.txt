@@ -1,0 +1,30 @@
+#include <Servo.h>
+Servo servo1;
+Servo servo2;
+
+float X=6;
+float Y=7;
+
+float L1=30;
+float L2=35;
+
+float angl=90;
+float angl1;
+float angl2;
+
+
+
+void setup() {
+  servo1.attach(11);
+  servo2.attach(10);
+}
+void loop(){
+
+angl2= sq(X)+sq(Y)-sq(L1)-sq(L2)/2*L1*L2;
+  angl2=cos(angl2);
+
+servo1.write(angl2);  
+  
+  angl1=angl-angl2;
+servo1.write(angl1);
+}
